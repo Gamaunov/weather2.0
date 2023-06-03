@@ -2,11 +2,22 @@
 $font-bold: 'Montserrat-Bold', sans-serif;
 $font-semiBold: 'Montserrat-SemiBold', sans-serif;
 $font-medium: 'Montserrat-Medium', sans-serif;
+$font-reg: 'Open Sans', sans-serif;
 
 // text's colors
 $color-white: #fff;
 $color-black: #000000;
+$color-gray: #363636;
 
 // main colors
-$color-primary: #4cc689;
+$color-primary: #398e64;
 $color-bg: #363636;
+
+// shadow
+$shadow-1: 0px 5px 17px 8px rgba(12, 92, 205, 0.2);
+
+// gradients
+$gradient-1: linear-gradient(45deg, rgb(152, 207, 195), rgb(86, 181, 184) 73%);
+
+$bg-btn: teal;
+$bg-btn-disabled: #424a3e;
