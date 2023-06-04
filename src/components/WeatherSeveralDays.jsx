@@ -2,7 +2,7 @@ import { useSelector } from 'react-redux'
 
 const WeatherSeveralDays = () => {
   const fiveDays = useSelector((state) => state.weather.fiveDays)
-  
+
   const fiveDaysArr = [
     fiveDays[1],
     fiveDays[9],

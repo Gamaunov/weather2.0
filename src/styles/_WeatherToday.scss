@@ -1,11 +1,11 @@
-.weather {
-}
 .weather-today {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
   margin-bottom: 20px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 }
 
 .weather-today__info {
@@ -16,9 +16,6 @@
   line-height: 22px;
 }
 
-.weather-today__info-data {
-}
-
 .weather-today__info-btn {
   display: inline-block;
   padding: 10px 20px;
@@ -26,7 +23,7 @@
   font-weight: bold;
   text-align: center;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 18px;
   background-color: $bg-btn;
   color: $color-white;
   border: none;
@@ -58,18 +55,13 @@
   }
 }
 .weather-today__info-btn--hide {
-  visibility: hidden;
+  background-color: rgb(58 85 89 / 50%);
 }
 .weather-today__info-city--icon {
   width: 20px;
 }
 .weather-today__info-data--degree {
   font-family: $font-bold;
-}
-
-.weather-today__info-data--day {
-  // font-size: 18px;
-  // line-height: 22px;
 }
 
 .weather-today__info-icon {
@@ -87,9 +79,6 @@
   display: flex;
   align-items: center;
   gap: 15px;
-}
-.weather-today__details-icon {
-  //min-width: 30px;
 }
 .weather-today__details-text {
   min-width: 100px;

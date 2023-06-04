@@ -7,9 +7,9 @@ const Main = () => {
   const [showFiveD, setShowFiveD] = useState(false)
 
   return (
-    <main>
-      <WeatherToday setShowFiveD={setShowFiveD} />
-      {showFiveD && <WeatherSeveralDays />}
+    <main className="main">
+      <WeatherToday setShowFiveD={setShowFiveD} showFiveD={showFiveD} />
+      <div className="main__five">{showFiveD && <WeatherSeveralDays />}</div>
     </main>
   )
 }

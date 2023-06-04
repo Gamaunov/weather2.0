@@ -7,16 +7,15 @@ import cn from 'classnames'
 import { useDispatch, useSelector } from 'react-redux'
 
 import { setLocation } from '../redux/locationSlice'
-import { cutString } from '../utils/cutString'
 
-const WeatherToday = ({ setShowFiveD }) => {
+const WeatherToday = ({ setShowFiveD, showFiveD }) => {
   const dispatch = useDispatch()
   const current = useSelector((state) => state.weather.current)
   const [isActive, setActive] = useState('')
 
   const handleToggle = () => {
-    setActive('weather-today__info-btn--hide')
-    setShowFiveD(true)
+    !showFiveD ? setActive('weather-today__info-btn--hide') : setActive('')
+    setShowFiveD(!showFiveD)
   }
 
   const addZero = (num) => {

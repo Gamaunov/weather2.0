@@ -1,0 +1,13 @@
+.main__five {
+  min-height: 180px;
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 600px) {
+    min-height: 320px;
+    min-width: 400px;
+    justify-content: center;
+  }
+  @media (max-width: 475px) {
+    min-width: 280px;
+  }
+}
