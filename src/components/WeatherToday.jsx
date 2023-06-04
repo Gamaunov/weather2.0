@@ -46,7 +46,6 @@ const WeatherToday = ({ setShowFiveD, showFiveD }) => {
           <p className="weather-today__info-data--day">
             Today <span>{cityTime()}</span>
           </p>
-
           <button
             onClick={handleToggle}
             className={cn('weather-today__info-btn', isActive)}

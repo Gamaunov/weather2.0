@@ -1,17 +1,15 @@
 import { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 
 import Search from './components/Search'
 import Main from './components/Main'
-import { useDispatch, useSelector } from 'react-redux'
 import { fetchWeather, fetchWeatherFiveD } from './redux/weather/asyncActions'
-import { SUCCEEDED } from './redux/constants'
+import { PENDING, SUCCEEDED } from './redux/constants'
 
 function App() {
   const dispatch = useDispatch()
 
   const location = useSelector((state) => state.location.location)
-  const current = useSelector((state) => state.weather.current)
-  const fiveDays = useSelector((state) => state.weather.fiveDays)
   const status = useSelector((state) => state.weather.status)
 
   function getLocation() {
@@ -42,7 +40,7 @@ function App() {
 
   useEffect(() => {
     getLocation()
-  }, [])
+  })
 
   return (
     <div className="weather">

@@ -4,7 +4,7 @@ body {
   font-size: 1rem;
   line-height: 1.2rem;
   color: $color-white;
-  background: $gradient-1;
+  background: $bg;
   @media (max-width: 768px) {
     font-size: 0.875rem;
     line-height: 1rem;
@@ -16,6 +16,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  // background-image: url('../assets/weather-loader.gif');
   @media (max-width: 600px) {
     height: auto;
     padding: 20px 0;
